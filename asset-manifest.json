@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aefa8deb.css",
+    "main.js": "/static/js/main.3c3d2c6f.js",
+    "static/media/ok.svg": "/static/media/ok.2189d141491dbdb5d90abde813a88fd7.svg",
+    "static/media/wallet.svg": "/static/media/wallet.fcece5fb098fe617dadf965aafb5791e.svg",
+    "static/media/Logo.svg": "/static/media/Logo.6c96906488cf38026d25c2c833ab61a9.svg",
+    "static/media/MiniLogo.svg": "/static/media/MiniLogo.a1f8ad3794e76952b254c91bd797bc9c.svg",
+    "static/media/sad.svg": "/static/media/sad.3ea1526703e1057f7560f467ff9f1884.svg",
+    "static/media/flash.svg": "/static/media/flash.8441c110ca85dbbb3c4945dddeb9954d.svg",
+    "static/media/flag.svg": "/static/media/flag.67fa90249b3ddcd87fd7e1025fced6bd.svg",
+    "static/media/Telegram.svg": "/static/media/Telegram.5f7548af0f7380c723ce281b6570bba5.svg",
+    "index.html": "/index.html",
+    "static/media/iconRight.svg": "/static/media/iconRight.375f1072ea4d9f443bd93edd08f6580b.svg",
+    "main.aefa8deb.css.map": "/static/css/main.aefa8deb.css.map",
+    "main.3c3d2c6f.js.map": "/static/js/main.3c3d2c6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aefa8deb.css",
+    "static/js/main.3c3d2c6f.js"
+  ]
+}

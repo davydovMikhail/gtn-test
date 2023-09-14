@@ -14,6 +14,7 @@ import { useGetCurrentBlockNumber } from '../hooks/useGetBlockNumber'
 import { usePlayBid } from '../hooks/usePlayBid';
 import { useGetRandomNumber } from '../hooks/useGetRandomNumber';
 import { useGetTotalGames } from '../hooks/useGetTotalGames';
+import { useClaim } from '../hooks/useClaim';
 import { useEthers } from "@usedapp/core";
 import GameItem from '../components/game-item/gameItem';
 import Pagination from '../components/pagination/pagination';
@@ -205,6 +206,38 @@ const Main = () => {
         }, 500, "checkHash")
     }
 
+    async function handleClaim() {
+        if (!account) {
+            toast.info('First connect your wallet', {
+                position: "bottom-center",
+                autoClose: 1000,
+                hideProgressBar: true,
+                pauseOnHover: false,
+                draggable: true,
+                theme: "colored",
+            });
+            return;
+        }
+        if (balance > 0) {
+            toast.info('You have already received test tokens', {
+                position: "bottom-center",
+                autoClose: 1000,
+                hideProgressBar: true,
+                pauseOnHover: false,
+                draggable: true,
+                theme: "colored",
+            });
+            return;
+        }
+        SetNotification("Getting tokens...");
+        SetStatus(Status.Loader);
+        await claimHook();
+        const balanceAccount = await getBalanceHook(account as string);   
+        setBalance(balanceAccount as number);
+        SetNotification("Tokens received");
+        SetStatus(Status.Won);
+    }
+
     async function startLighthouse() {
         setBorderColor("#FFB81F");
         await Timeout.set(350);
@@ -241,6 +274,7 @@ const Main = () => {
     const playHook = usePlayBid();
     const randomHook = useGetRandomNumber();
     const totalHook = useGetTotalGames();
+    const claimHook = useClaim();
     const { activateBrowserWallet, account } = useEthers();
     const [amount, setAmount] = useState('1');
     const [percent, setPercent] = useState('20');
@@ -308,7 +342,7 @@ const Main = () => {
                     </div>
                     
                     <div className="header__buttons">
-                        <a className="button__size button__transparent" href="#" style={{marginRight: "8px"}}>Swap tokens</a>
+                        <a onClick={() => handleClaim()} className="button__size button__transparent" style={{marginRight: "8px", cursor: "pointer"}}>Claim Test</a>
                         
                         {account? <a onClick={() => activateBrowserWallet()} className="button__size button__transparent">{account?.slice(0, 5)}...{account?.slice(-2)}</a> :
                                   <a onClick={() => activateBrowserWallet()} className="button__size button__style">Connect Wallet</a>

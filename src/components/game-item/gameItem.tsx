@@ -1,6 +1,6 @@
 import { formatEther } from '@ethersproject/units'
 import Sad from "../../img/sad.svg"
-import Ok from "../../img/ok.svg"
+import Happy from "../../img/happy.svg"
 
 type IGame = any;
 
@@ -10,7 +10,7 @@ const GameItem = (props: IGame) => {
         <div className="board__header item" key={props.randomNumber}>
             { props.result ? 
                 <div className="item__text item__status">
-                    <img className="item__icon" src={Ok} alt="" />
+                    <img className="item__icon" src={Happy} alt="" />
                     <div>
                         Won
                     </div>

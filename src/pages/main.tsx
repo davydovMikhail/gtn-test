@@ -316,7 +316,7 @@ const Main = () => {
                                     <img src={Wallet}/>
                                 </div>
                                 <div className="header__baltext">
-                                    Balance: {Number(balance).toFixed(2)}
+                                    Balance: {Number(balance).toFixed(2)} $RBET
                                 </div>
                             </div> : ""
                         }
@@ -344,7 +344,7 @@ const Main = () => {
                     <div className="header__buttons">
                         <a onClick={() => handleClaim()} className="button__size button__transparent" style={{marginRight: "8px", cursor: "pointer"}}>Claim Test</a>
                         
-                        {account? <a onClick={() => activateBrowserWallet()} className="button__size button__transparent">{account?.slice(0, 5)}...{account?.slice(-2)}</a> :
+                        {account? <a className="button__size button__transparent">{account?.slice(0, 5)}...{account?.slice(-2)}</a> :
                                   <a onClick={() => activateBrowserWallet()} className="button__size button__style">Connect Wallet</a>
                         }
 

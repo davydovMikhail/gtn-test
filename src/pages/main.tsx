@@ -47,7 +47,7 @@ const Main = () => {
     function handleDoubleAmount() {
         const doubleAmount = Number(amount) * 2;
         if(doubleAmount > balance) {
-            setAmount(balance.toString());
+            setAmount( (Math.floor(balance * 100000) / 100000).toString());
         } else {
             setAmount(doubleAmount.toString());
         }
@@ -464,12 +464,12 @@ const Main = () => {
                 <div className="footer">
                     <img src={MiniLogo} alt="mini logo" />
                     <div className="footer__text">Privacy Policy</div>
-                    <div className="footer__text">Copyright 2023. RabgeBet. All Rights Reserved.</div>
+                    <div className="footer__text">Copyright 2023. RangeBet. All Rights Reserved.</div>
                     <div className="footer__links">
-                        <a href="#">
+                        <a target='_blank' href="https://t.me/rangebetcasino">
                             <img src={Telegram} alt="telegram"/>
                         </a>
-                        <a href="#">
+                        <a target='_blank' href="https://twitter.com/RangeBet">
                             <img src={XxX} alt="X"/>
                         </a>
                     </div>

@@ -351,7 +351,7 @@ const Main = () => {
 
                     </div>
                 </div>
-                <div className="max">
+                <div className="max" data-tooltip-id="my-tooltip-max">
                     <div className="max__title">
                         <img className="max__icon" src={Flash} alt="logo"/>
                         <div>Maximum possible payout:</div>
@@ -360,6 +360,12 @@ const Main = () => {
                         {maxWin.toFixed(2)} $RBET
                     </div>
                 </div>
+                <ReactTooltip
+                    id="my-tooltip-max"
+                    place="bottom"
+                    variant="dark"
+                    content="The maximum payout is 70% of the casino bank"
+                />
                 <div className="wrapper">
                     <div className="inputs">
                         <div className="inputs__section">
@@ -415,13 +421,13 @@ const Main = () => {
                         <ReactTooltip
                             id="my-tooltip-less"
                             place="right"
-                            variant="info"
+                            variant="dark"
                             content="The 'Less' range in which a random number can fall out"
                         />
                         <ReactTooltip
                             id="my-tooltip-more"
                             place="left"
-                            variant="info"
+                            variant="dark"
                             content="The 'More' range in which a random number can fall out"
                         />
                     </div>
@@ -444,7 +450,7 @@ const Main = () => {
                     <ReactTooltip
                             id="my-tooltip-payout"
                             place="bottom"
-                            variant="info"
+                            variant="dark"
                             content="The number of $RBET tokens that you will receive if a random number falls in the range you have chosen"
                         />
                     <div className="total">

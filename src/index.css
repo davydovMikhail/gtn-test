@@ -427,6 +427,10 @@ textarea:focus, input:focus{
   text-transform: capitalize;
   border: 0;
   cursor: pointer;
+  transition: transform .5s;
+}
+.decision__button:hover {
+  transform: scale(1.02);
 }
 .decision__button_less {
   background: var(--12421, linear-gradient(192deg, #B0FF09 0%, #05B8F1 100%));

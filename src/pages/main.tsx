@@ -3,6 +3,7 @@ import Logo from "../img/Logo.svg"
 import Preloader from "../img/Preloader.png"
 import Flash from "../img/flash.svg"
 import Wallet from "../img/wallet.svg"
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useTypedSelector } from '../hooks/useTypedSelector';
 import { useGetLastHash } from '../hooks/useGetLastHash';
 import { useGetMaxWin } from '../hooks/useGetMaxWin';
@@ -409,8 +410,20 @@ const Main = () => {
                         </button>
                     </div>
                     <div className="pieces">
-                        <div className="pieces__cell pieces__leftborder">0 - { getRange() }</div>
-                        <div className="pieces__cell pieces__rightborder">{ 999999 - getRange() } - 999999</div>
+                        <div data-tooltip-id="my-tooltip-less" className="pieces__cell pieces__leftborder">0 - { getRange() }</div>
+                        <div data-tooltip-id="my-tooltip-more" className="pieces__cell pieces__rightborder">{ 999999 - getRange() } - 999999</div>
+                        <ReactTooltip
+                            id="my-tooltip-less"
+                            place="right"
+                            variant="info"
+                            content="The 'Less' range in which a random number can fall out"
+                        />
+                        <ReactTooltip
+                            id="my-tooltip-more"
+                            place="left"
+                            variant="info"
+                            content="The 'More' range in which a random number can fall out"
+                        />
                     </div>
                     <div className="ranges">
                         <div
@@ -425,9 +438,15 @@ const Main = () => {
                     <div className="possible">
                         Possible Payout
                     </div>
-                    <div className="possibletext">
+                    <div className="possibletext" data-tooltip-id="my-tooltip-payout">
                         {getPossibleWin()} $RBET
                     </div>
+                    <ReactTooltip
+                            id="my-tooltip-payout"
+                            place="bottom"
+                            variant="info"
+                            content="The number of $RBET tokens that you will receive if a random number falls in the range you have chosen"
+                        />
                     <div className="total">
                         <div className="total__title">
                             <img className="total__icon" src={Flag} alt="flag"/>

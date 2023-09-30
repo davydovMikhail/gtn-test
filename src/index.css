@@ -624,3 +624,34 @@ textarea:focus, input:focus{
   font-weight: 500;
   text-decoration-line: underline;
 }
+
+.mobile {
+  width: 375px;
+  margin: auto;
+  height: 300px;
+}
+.mobile__logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile__img {
+    width: 100px;
+    height: 100px;
+}
+.mobile__links {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 0 auto;
+}
+.mobile__text {
+  color: #fff;
+  margin: 20px;
+  text-align: center;
+}

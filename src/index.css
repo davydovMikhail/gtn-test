@@ -436,6 +436,21 @@ textarea:focus, input:focus{
   background: var(--12421, linear-gradient(192deg, #B0FF09 0%, #05B8F1 100%));
   box-shadow: 0px 0px 24px 0px rgba(191, 252, 67, 0.50);
 }
+.decision__current {
+  animation: blinkerButton 3s linear infinite;
+}
+@keyframes blinkerButton {
+  0% {
+    transform: scale(1.02);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
 .decision__button_more {
   background: var(--12421, linear-gradient(192deg, #FFE2A4 0%, #FFB81F 100%));
   box-shadow: 0px 0px 24px 0px rgba(255, 218, 26, 0.50);

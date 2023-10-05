@@ -35,7 +35,7 @@ const Pagination = () => {
         let end;
         
         if (page === lastPage() && page != 1 && page != 2) {          
-            end = remnant();
+            end = remnant() || 10;
             start = 0;
         } else {
             end = totalGames;

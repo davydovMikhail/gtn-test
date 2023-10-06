@@ -414,10 +414,20 @@ const Main = () => {
                         </div>
                     </div>
                     <div className="decision">
-                        <button disabled={ status == Status.Loader } onClick={() => handlePlay(false)} className={curRange === 'less' ? "decision__button decision__button_less decision__current" : "decision__button decision__button_less"}>
+                        <button 
+                            disabled={ status == Status.Loader } 
+                            onClick={() => handlePlay(false)} 
+                            className={curRange === 'less' ? "decision__button decision__button_less decision__current" : "decision__button decision__button_less"}
+                            style={{opacity: curRange === 'more' ? "0.2" : "1"}}
+                        >
                             Less
                         </button>
-                        <button disabled={ status == Status.Loader } onClick={() => handlePlay(true)} className={curRange === 'more' ? "decision__button decision__button_more decision__current" : "decision__button decision__button_more"}>
+                        <button 
+                            disabled={ status == Status.Loader }
+                            onClick={() => handlePlay(true)} 
+                            className={curRange === 'more' ? "decision__button decision__button_more decision__current" : "decision__button decision__button_more"}
+                            style={{opacity: curRange === 'less' ? "0.2" : "1"}}
+                        >
                             More
                         </button>
                     </div>

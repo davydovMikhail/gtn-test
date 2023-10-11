@@ -564,6 +564,20 @@ textarea:focus, input:focus{
 .item {
   margin-top: 8px;
 }
+.item__address {
+  display: flex;
+  align-items: center;
+}
+.item__copy {
+  height: 25px;
+  cursor: pointer;
+}
+.item__copy:hover {
+  transform: scale(1.05);
+}
+.item__copy:active {
+  opacity: 0.2;
+}
 .item__text {
   padding: 16px;
   color: var(--w, #FFF);
@@ -624,7 +638,7 @@ textarea:focus, input:focus{
   height: 176px;
   padding: 48px 90px;
   display: grid;
-  grid-template-columns: 135px 157px 1fr 80px;
+  grid-template-columns: 135px 1fr 80px;
   align-items: center;
 }
 .footer__links {
@@ -634,7 +648,7 @@ textarea:focus, input:focus{
 }
 
 .footer__text {
-  color: var(--white-op-20, rgba(255, 255, 255, 0.20));
+  color: var(--white-op-20, rgba(255, 255, 255, 1));
   font-size: 18px;
   font-weight: 500;
   text-decoration-line: underline;

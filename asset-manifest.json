@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d52cce6.css",
-    "main.js": "/static/js/main.b0dafbbc.js",
+    "main.css": "/static/css/main.6a9e96a2.css",
+    "main.js": "/static/js/main.90728580.js",
     "static/media/happy.svg": "/static/media/happy.c3a8ef2ab39eadf9c47ce37b818ec5e6.svg",
     "static/media/wallet.svg": "/static/media/wallet.fcece5fb098fe617dadf965aafb5791e.svg",
     "static/media/Logo.svg": "/static/media/Logo.6c96906488cf38026d25c2c833ab61a9.svg",
@@ -9,14 +9,16 @@
     "static/media/sad.svg": "/static/media/sad.3ea1526703e1057f7560f467ff9f1884.svg",
     "static/media/flash.svg": "/static/media/flash.8441c110ca85dbbb3c4945dddeb9954d.svg",
     "static/media/flag.svg": "/static/media/flag.67fa90249b3ddcd87fd7e1025fced6bd.svg",
-    "static/media/Telegram.svg": "/static/media/Telegram.5f7548af0f7380c723ce281b6570bba5.svg",
+    "static/media/Telegram.svg": "/static/media/Telegram.cf6feab34fd2ee4472c1319aad5e95dd.svg",
+    "static/media/twitter.svg": "/static/media/twitter.099557bb102f54ceab2203ec0dc8d668.svg",
     "index.html": "/index.html",
+    "static/media/copy.svg": "/static/media/copy.8cf972097cf8f0a92306ca9cb031bfb9.svg",
     "static/media/iconRight.svg": "/static/media/iconRight.375f1072ea4d9f443bd93edd08f6580b.svg",
-    "main.0d52cce6.css.map": "/static/css/main.0d52cce6.css.map",
-    "main.b0dafbbc.js.map": "/static/js/main.b0dafbbc.js.map"
+    "main.6a9e96a2.css.map": "/static/css/main.6a9e96a2.css.map",
+    "main.90728580.js.map": "/static/js/main.90728580.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d52cce6.css",
-    "static/js/main.b0dafbbc.js"
+    "static/css/main.6a9e96a2.css",
+    "static/js/main.90728580.js"
   ]
 }

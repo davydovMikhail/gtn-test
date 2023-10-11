@@ -684,3 +684,187 @@ textarea:focus, input:focus{
   margin: 20px;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .header {
+    top: 0;
+    width: 600px;
+    padding: 4px 5px 4px 5px;
+    border-radius: 0px;
+  }
+  .header__balance {
+    margin-right: 0;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    padding: 1px 5px;
+    height: 36px;
+  }
+  .header__tablo {
+    height: 36px;
+    border-radius: 7px;
+    padding: 1px 5px;
+  }
+  .button__size {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    max-height: 28px;
+    height: 25px;
+  }
+
+  .header__group {
+    flex-direction: column;
+    width: 230px;
+  }
+  .header__logo {
+    display: none;
+  }
+
+  .header__info {
+    font-size: 13px;
+    line-height: 12px; /* 240% */
+    text-align: center;
+  }
+  .header__baltext {
+    font-size: 13px;
+    line-height: 12px;
+  }
+  .header__wallet {
+    margin-right: 5px;
+  }
+  .header__preloader {
+    margin-right: 4px;
+  }
+  .header__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .max {
+    margin: 100px auto 0;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    padding: 0px;
+    position: relative;
+    align-items: center;
+    left: 0px;
+  }
+  .max__title {
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .max__sum {
+    font-size: 24px;
+  }
+  .max__icon {
+    margin-right: 6px;
+    height: 20px;
+  }
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .wrapper {
+    max-width: 912px;
+    margin: 15px auto auto;
+    padding: 0 5px 0 5px;
+  }
+  .inputs__input {
+    border-radius: 12px;
+    padding: 12px 12px 12px 18px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .inputs__setter {
+    font-size: 14px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .inputs__title {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 4px;
+  }
+  .inputs__section {
+    margin: 5px;
+  }
+  .footer {
+    margin-top: 60px;
+    height: 145px;
+    padding: 5px 12px;
+    display: grid;
+    grid-template-columns: 75px 1fr 80px;
+    align-items: center;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
+
+  .possible {
+    padding: 6px 24px;
+    width: 316px;
+    font-size: 18px;
+    margin-top: 24px;
+  }
+  .possibletext {
+    font-size: 40px;
+    line-height: 48px; 
+    margin-top: 16px;
+  }
+  .total {
+    width: 100%;
+    padding: 4px 12px;
+    margin-top: 24px;
+  }
+  .total__title {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .total__sum {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 48px; 
+  }
+  .total__icon {
+    margin-right: 3px;
+    height: 24px;
+  }
+  .ranges {
+    display: none;
+  }
+  .pieces {
+    display: none;
+  }
+  .decision {
+    gap: 12px;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  .pagination {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .boardwrap {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    width: 375px;
+  }
+  .decision {
+    grid-template-columns: 1fr;
+    grid-template-rows: 48px 48px;
+  }
+  .decision__button {
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-size: 20px;
+  }
+}

@@ -491,11 +491,8 @@ const Main = () => {
                 <div className="boardwrap">
                     <div className="board">
                         <div className="board__header">
-                            <div className="board__title">
+                            <div className="board__title board__title_left">
                                 Status
-                            </div>
-                            <div className="board__title">
-                                Address
                             </div>
                             <div className="board__title">
                                 Chance (%)
@@ -505,6 +502,9 @@ const Main = () => {
                             </div>
                             <div className="board__title">
                                 Random Number
+                            </div>
+                            <div className="board__title board__title_right">
+                                Address
                             </div>
                         </div>
                         {games.map(block => GameItem(block))}

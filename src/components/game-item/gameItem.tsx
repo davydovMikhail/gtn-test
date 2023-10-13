@@ -38,14 +38,6 @@ const GameItem = (props: IGame) => {
                     </div>
                 </div>
             }
-            <div className="item__address">
-                <div className="item__text">
-                    {props.player.slice(0, 5)}....{props.player.slice(-4)}
-                </div>
-                <div className="item__copy" onClick={() => {copyToClipboard()}}>
-                    <img src={copyIcon} alt="copy icon"/>
-                </div>
-            </div>
             <div className="item__text">
                 {props.percent}
             </div>
@@ -54,6 +46,14 @@ const GameItem = (props: IGame) => {
             </div>
             <div className="item__text">
                 {Number(props.randomNumber)}
+            </div>
+            <div className="item__address">
+                <div className="item__text">
+                    {props.player.slice(0, 5)}....{props.player.slice(-4)}
+                </div>
+                <div className="item__copy" onClick={() => {copyToClipboard()}}>
+                    <img src={copyIcon} alt="copy icon"/>
+                </div>
             </div>
         </div>        
     )
